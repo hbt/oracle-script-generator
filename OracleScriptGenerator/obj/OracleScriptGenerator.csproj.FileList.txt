@@ -1,0 +1,14 @@
+bin\Debug\OracleScriptGenerator.exe
+bin\Debug\OracleScriptGenerator.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\OracleScriptGenerator.GUI.MainForm.resources
+obj\Debug\OracleScriptGenerator.GUI.Tables.CreateTableWizard1.resources
+obj\Debug\OracleScriptGenerator.GUI.Tables.CreateTableWizard2.resources
+obj\Debug\OracleScriptGenerator.GUI.Tables.CreateTableWizard3.resources
+obj\Debug\OracleScriptGenerator.GUI.Tables.ContraintePrimaryKey.resources
+obj\Debug\OracleScriptGenerator.GUI.Tables.ContrainteForeignKey.resources
+obj\Debug\OracleScriptGenerator.GUI.Tables.ContrainteUnique.resources
+obj\Debug\OracleScriptGenerator.GUI.Tables.ContrainteCheck.resources
+obj\Debug\OracleScriptGenerator.csproj.GenerateResource.Cache
+obj\Debug\OracleScriptGenerator.exe
+obj\Debug\OracleScriptGenerator.pdb

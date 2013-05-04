@@ -1,0 +1,116 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OracleScriptGenerator</RootNamespace>
+    <AssemblyName>OracleScriptGenerator</AssemblyName>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{97838AC0-43D6-460F-8854-37755CEDC454}</ProjectGuid>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <FileAlignment>4096</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <ApplicationIcon>files\www.oracle.com.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <Optimize>False</Optimize>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <Optimize>True</Optimize>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="OracleScriptGenerator, Version=1.0.2346.13133, Culture=neutral, PublicKeyToken=null" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainForm.cs" />
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Generator.cs" />
+    <Compile Include="CreateTableWizard1.Designer.cs">
+      <DependentUpon>CreateTableWizard1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateTableWizard1.cs" />
+    <EmbeddedResource Include="CreateTableWizard1.resx">
+      <DependentUpon>CreateTableWizard1.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="CreateTableWizard2.Designer.cs">
+      <DependentUpon>CreateTableWizard2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateTableWizard2.cs" />
+    <EmbeddedResource Include="CreateTableWizard2.resx">
+      <DependentUpon>CreateTableWizard2.Designer.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="CreateTableWizard3.Designer.cs">
+      <DependentUpon>CreateTableWizard3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateTableWizard3.cs" />
+    <EmbeddedResource Include="CreateTableWizard3.resx">
+      <DependentUpon>CreateTableWizard3.Designer.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="ContraintePrimaryKey.Designer.cs">
+      <DependentUpon>ContraintePrimaryKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContraintePrimaryKey.cs" />
+    <EmbeddedResource Include="ContraintePrimaryKey.resx">
+      <DependentUpon>ContraintePrimaryKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="ContrainteForeignKey.Designer.cs">
+      <DependentUpon>ContrainteForeignKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContrainteForeignKey.cs" />
+    <EmbeddedResource Include="ContrainteForeignKey.resx">
+      <DependentUpon>ContrainteForeignKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="ContrainteUnique.Designer.cs">
+      <DependentUpon>ContrainteUnique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContrainteUnique.cs" />
+    <EmbeddedResource Include="ContrainteUnique.resx">
+      <DependentUpon>ContrainteUnique.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="ContrainteCheck.Designer.cs">
+      <DependentUpon>ContrainteCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContrainteCheck.cs" />
+    <EmbeddedResource Include="ContrainteCheck.resx">
+      <DependentUpon>ContrainteCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Contrainte.cs" />
+    <Compile Include="PrimaryKey.cs" />
+    <Compile Include="ForeignKey.cs" />
+    <Compile Include="Attribut.cs" />
+    <Compile Include="Table.cs" />
+    <Compile Include="TableComparer.cs" />
+    <Compile Include="Unique.cs" />
+    <Compile Include="Check.cs" />
+    <Compile Include="SyntaxRichTextBox.cs" />
+    <Compile Include="SyntaxHighlighter.cs" />
+  </ItemGroup>
+  <Import Project="$(SharpDevelopBinPath)\SharpDevelop.Build.CSharp.targets" />
+</Project>
